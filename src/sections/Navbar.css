@@ -1,0 +1,79 @@
+.nav-li_a {
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    color: #ccc; /* Neutral color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Add the hover effect */
+.nav-li_a:hover, .nav-li_a:focus {
+    color: #fff;
+}
+
+/* Create a pseudo-element for the underline effect */
+.nav-li_a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #fff; /* The underline color */
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+/* Expand the pseudo-element on hover */
+.nav-li_a:hover::before, .nav-li_a:focus::before, .nav-li_a.active::before {
+    width: 100%;
+    left: 0;
+}
+
+/* Active link styling */
+.nav-li_a.active {
+    color: #fff;
+}
+
+/* Navbar container */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background-color: rgba(0, 0, 0, 0.9); /* Black with transparency */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Optionally, you can increase the shadow intensity */
+header:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+
+@media (min-width: 640px) {
+    .nav-sidebar {
+        display: none;
+    }
+}
+.navbar-brand {
+    color: #D1D5DB; /* Tailwind's gray-300 */
+    font-size: 1.5rem; /* Adjust font size as needed */
+    font-weight: 700; /* Make the name bold */
+    letter-spacing: 1px; /* Add some space between letters */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease, transform 0.3s ease; /* Add transition for hover effects */
+}
+
+.navbar-brand:hover {
+    color: #60A5FA; /* Tailwind's blue-400 on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+@media (min-width: 640px) {
+    .navbar-brand {
+        font-size: 1.75rem; /* Increase font size for larger screens */
+    }
+}
