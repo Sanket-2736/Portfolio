@@ -1,7 +1,7 @@
 import React from 'react';
 import gridImg from '../../public/assets/grid1.png';
-import gridImg2 from '../../public/assets/grid2.png';
-import gridImg3 from '../../public/assets/grid3.png';
+import gridImg3 from '../../public/assets/grid2.png';
+import gridImg2 from '../constants/TechStack.png';
 import './About.css'
 
 function About() {

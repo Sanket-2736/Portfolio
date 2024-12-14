@@ -22,14 +22,16 @@ import video10 from '../constants/Whac.mp4'
 import c1 from '../constants/JsCertificate.jpg'
 import c2 from '../constants/IntroToFrontEnd.jpg'
 import c3 from '../constants/PythonCertificate.jpg'
+import c4 from '../constants/JavaCertificate.png'
 
 import b1 from '../constants/Pizza.mp4'
 import b2 from '../constants/FoodWebsite.mp4'
-import b3 from '../constants/FoodWebsite.mp4'
+import b3 from '../constants/Jewellery.mp4'
 import b4 from '../constants/shopping.mp4'
 
 import p1 from '../constants/conference.jpg'
 import p2 from '../constants/dt.jpg'
+import p3 from '../constants/InsigntSphere.png'
 
 export const techSkills = [
   {
@@ -121,6 +123,11 @@ export const certifications = [
     image: c3
   },
   {
+    name: "Programming in Java",
+    platform: 'NPTEL',
+    image: c4
+  },
+  {
     name: 'Introduction To FrontEnd Development',
     platform: 'Coursera',
     image: c2
@@ -165,4 +172,11 @@ export const recentProjects = [
     desc: "The AI-Based Answer Sheet Analyser is a powerful tool designed to automate the grading process for printed text answer sheets. Using advanced machine learning algorithms and OCR (Optical Character Recognition), it scans and analyzes printed responses, compares them against a model answer sheet, and evaluates answers based on keyword presence, length, and content accuracy. This system enhances efficiency, reduces manual errors, and provides detailed feedback, making it ideal for educational institutions aiming to streamline exam evaluation.",
     href: "Underdevelopment"
   },  
+  {
+    name: "InsigntSphere - The News Aggregator App",
+    TechStack: "React.js(frontend), Django, News Api, Web Scraping",
+    image : p3,
+    desc: "InsightSphere is your personalized news aggregator app, designed to keep you informed and up-to-date on current events from around the world. Our intuitive app aggregates news from trusted sources, providing you with a comprehensive and unbiased view of global happenings.",
+    href: "Underdevelopment"
+  }, 
 ]
