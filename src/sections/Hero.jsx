@@ -2,6 +2,7 @@ import React from 'react';
 import homeImg from '../constants/CSE3.png';
 import About from '../components/About';
 import resumePDF from '../constants/Resume.pdf'; // Ensure this path is correct
+import RoadMap from './RoadMap';
 
 function Hero() {
   return (
@@ -16,7 +17,7 @@ function Hero() {
           <p className="text-lg sm:text-2xl font-medium text-gray-300 drop-shadow-sm mb-8 animate-fadeIn delay-500">
             DSA Enthusiast & Developer
           </p>
-          <a href={resumePDF} download='Sanket-Resume.pdf' className="button-85 px-8 py-4 rounded-lg text-white font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg focus:ring-4 focus:ring-blue-300">
+          <a href={resumePDF} download='Sanket-Resume.pdf' className="button-85 px-8 py-4 rounded-lg text-white font-semibold transition-all duration-300 shadow-lg focus:ring-4 focus:ring-blue-300">
             Download Resume
           </a> 
         </div>
@@ -33,12 +34,14 @@ function Hero() {
         {/* Call-to-Action Button Section */}
         <div className="flex flex-col sm:flex-row gap-4 z-10">
           {/* Work Together Button */}
-          <button className="button-85 px-8 py-4 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg focus:ring-4 focus:ring-blue-300">
+          <a href='https://www.linkedin.com/in/sanket-belekar-79210228a/' className="button-85 px-8 py-4 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg focus:ring-4 focus:ring-blue-300">
             Let's Work Together!
-          </button>          
+          </a>          
         </div>
       </section>
       <About />
+
+      <RoadMap/>
     </>
   );
 }

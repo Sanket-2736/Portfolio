@@ -16,27 +16,26 @@ function Skills() {
           Key Technologies:
         </h3>
 
-        {techSkills.map((item, index) => {
-          const isSquare = item.width === item.height;
+        {techSkills.map((item, index) => (
+  <div 
+    key={index} 
+    className="bg-gray-900 rounded-xl shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl"
+    style={{ width: '100%', aspectRatio: '1 / 1' }} // Ensure square card layout
+  >
+    <div className="relative w-full h-full">
+      <img 
+        src={item.img} 
+        alt={item.name} 
+        className="w-full h-full object-contain p-4" // Ensure the image fits within the square
+      />
+    </div>
+    <div className="p-4 bg-gray-800">
+      <h4 className="text-xl font-semibold text-white text-center">{item.name}</h4>
+    </div>
+  </div>
+))}
 
-          return (
-            <div 
-              key={index} 
-              className="bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl"
-            >
-              <div className="relative w-full h-40">
-                <img 
-                  src={item.img} 
-                  alt={item.name} 
-                  className={`w-full h-full ${isSquare ? 'object-cover' : 'object-contain'}`} 
-                />
-              </div>
-              <div className="p-4">
-                <h4 className="text-xl font-semibold text-white">{item.name}</h4>
-              </div>
-            </div>
-          );
-        })}
+
       </div>
 
       {/* Certifications Section */}

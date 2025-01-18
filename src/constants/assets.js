@@ -1,12 +1,15 @@
 import javaImg from '../constants/java.png'
 import cImg from '../constants/c.png'
-import bootstrapImg from '../constants/bootstrap.jpeg'
+import bootstrapImg from '../constants/bootstrap.jpg'
 import frontendImg from '../constants/frontend.png'
 import pythonImg from '../constants/python.png'
+import javaScriptImg from '../constants/js.png'
 import cppImg from '../constants/cpp.png'
 import phpImg from '../constants/php.png'
-import djangoImg from '../constants/django.png'
+import djangoImg from '../constants/django.jpg'
+import reactImg from '../constants/react.png'
 import mernImg from '../constants/mern.jpeg'
+import mongoImg from '../constants/mongodb.jpg'
 
 import video1 from '../constants/spaceInvaders.mp4'
 import video2 from '../constants/PingPong.mp4'
@@ -47,6 +50,10 @@ export const techSkills = [
     img: djangoImg,
   },
   {
+    name: 'React.js',
+    img: reactImg,
+  },
+  {
     name: 'C Programming',
     img: cImg,
   },
@@ -55,12 +62,12 @@ export const techSkills = [
     img: cppImg,
   },
   {
-    name: 'FrontEnd - HTML5, CSS3, Javascript',
-    img: frontendImg,
+    name: 'Java Script',
+    img: javaScriptImg,
   },
   {
-    name: 'MERN (MongoDB, Express.js, React, Node.js)',
-    img: mernImg,
+    name: 'Mongo DB',
+    img: mongoImg,
   },
   {
     name: 'BootStrap',

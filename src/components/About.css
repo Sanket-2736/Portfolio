@@ -63,3 +63,24 @@
     border-radius: 10px;
   }
   
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px; /* Adjust height if necessary */
+    width: 80px; /* Adjust width if necessary */
+    margin-bottom: 16px; /* Space below the icon */
+  }
+  
+  .glowing-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Add background color */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px; /* Padding around the content */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  
+  .glowing-card:hover {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.7); /* Deeper shadow on hover */
+  }
+  
