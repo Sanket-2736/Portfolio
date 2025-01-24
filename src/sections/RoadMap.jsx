@@ -19,7 +19,7 @@ function RoadMap() {
               <div className="bg-blue-700 ml-10 p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
                 <h3 className="text-xl font-semibold mb-2">School</h3>
                 <p>Dr. Gujar Subhash High School, Devlali Camp</p>
-                <p>HSC Percentage: <span className="font-bold">96.4%</span></p>
+                <p>SSC Percentage: <span className="font-bold">96.4%</span></p>
               </div>
             </div>
             <div className="absolute hidden sm:block bg-blue-700 w-8 h-8 rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>

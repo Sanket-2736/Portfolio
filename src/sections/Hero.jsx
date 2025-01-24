@@ -11,7 +11,7 @@ function Hero() {
         {/* Text Section */}
         <div className="text-center mb-10 z-10 relative">
           <p className="sm:text-5xl text-3xl font-bold text-white drop-shadow-md mb-3 animate-fadeIn flex items-center justify-center">
-            Hi, I'm <span className="text-blue-300 gradient font-extrabold">Sanket</span>
+            Hi, I'm <span className="text-blue-300 gradient font-extrabold ml-5">Sanket</span>
             <span className="ml-2 waving-hand">👋🏻</span>
           </p>
           <p className="text-lg sm:text-2xl font-medium text-gray-300 drop-shadow-sm mb-8 animate-fadeIn delay-500">

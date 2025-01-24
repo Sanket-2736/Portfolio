@@ -187,3 +187,46 @@ export const recentProjects = [
     href: "Underdevelopment"
   }, 
 ]
+
+export const questions = [
+  {
+    question: "What is your expertise?",
+    answer: "I specialize in web development, cloud computing, and AI/ML, with a focus on delivering innovative and efficient solutions."
+  },
+  {
+    question: "What technologies do you work with?",
+    answer: "I primarily work with JavaScript, React, Python, MySQL, and other tools and platforms as required by the project."
+  },
+  {
+    question: "What kind of projects have you worked on?",
+    answer: "I have worked on diverse projects, including an AI-based answer sheet analyzer, a React-based News Aggregator App, a React based College International Conference Website, and more."
+  },
+  {
+    question: "Are you open to freelance opportunities or collaborations?",
+    answer: "Yes, I am open to freelance work and collaborations. Feel free to contact me through the form or the provided email/phone number."
+  },
+  {
+    question: "How can I contact you for inquiries or collaborations?",
+    answer: "You can reach me via email - sanketbelekar29@gmail.com. Alternatively, use the contact form above to send me a message."
+  },
+  {
+    question: "Where are you located?",
+    answer: "I am based in Nashik, MH, India, but I am open to remote opportunities and collaborations globally."
+  },
+  {
+    question: "Do you have any certifications or achievements?",
+    answer: "Yes, I have completed certifications in Python, Java and JavaScript and was felicitated for academic achievements like securing the second position in Computer Engineering with an GPA of 9.55."
+  },
+  {
+    question: "What motivates you in your work?",
+    answer: "My passion for learning and problem-solving motivates me to innovate and create meaningful solutions."
+  },
+  {
+    question: "Can I view your portfolio projects?",
+    answer: "Absolutely! You can explore my portfolio projects on the projects tab."
+  },
+  {
+    question: "Do you offer mentorship or guidance?",
+    answer: "Yes, I enjoy helping others. If you are a beginner in web development or cloud computing, feel free to reach out for guidance."
+  }
+];
