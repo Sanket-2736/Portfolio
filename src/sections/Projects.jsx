@@ -62,11 +62,7 @@ function Projects() {
                     className="button-82-pushable inline-block text-center py-2 px-4 rounded-md transition duration-300"
                     role="button"
                   >
-                    <span className="button-82-shadow"></span>
-                    <span className="button-82-edge"></span>
-                    <span className="button-82-front text text-white">
-                      Visit Github?
-                    </span>
+                    <button className="button-19">Visit Github?</button>
                   </a>
                 </div>
               </div>

@@ -14,7 +14,7 @@ function About() {
         <br /><br />
         🤝 In addition to coding, I enjoy collaborating on projects that challenge my creativity and push me to learn new technologies. When I'm not coding, you can find me exploring new tech trends or diving into open-source projects. I'm always excited to connect with like-minded individuals and contribute to meaningful projects!
       </p>
-      <div className="grid gap-10 xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 justify-center">
+      <div className="grid my-28 gap-10 xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 justify-center">
         {/* Column 1 */}
         <div className="col-span-1 flex flex-col items-center text-center glowing-card transition-transform duration-300 hover:scale-105">
           <div className="icon-container">
@@ -29,7 +29,7 @@ function About() {
         </div>
 
         {/* Column 2 */}
-        <div className="col-span-1 flex flex-col items-center text-center glowing-card transition-transform duration-300 hover:scale-105">
+        <div className="col-span-1 flex flex-col items-center text-center glowing-card-even transition-transform duration-300 hover:scale-105">
           <div className="icon-container">
             <Laptop className="text-blue-400 h-20 w-20 mb-4 transition-transform duration-300 hover:rotate-12" />
           </div>
@@ -55,7 +55,7 @@ function About() {
         </div>
 
         {/* Column 4 */}
-        <div className="col-span-1 flex flex-col items-center text-center glowing-card transition-transform duration-300 hover:scale-105">
+        <div className="col-span-1 flex flex-col items-center text-center glowing-card-even transition-transform duration-300 hover:scale-105">
           <div className="icon-container">
             <Search className="text-blue-400 h-20 w-20 mb-4 transition-transform duration-300 hover:rotate-12" />
           </div>

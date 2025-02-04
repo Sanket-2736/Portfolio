@@ -1,3 +1,51 @@
+.c-space {
+  padding: 0 2rem;
+}
+
+.glowing-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 123, 255, 0.3); /* Blue shadow */
+  transform: rotate(-5deg); /* Default tilt */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.glowing-card-even{
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 16px 26px rgba(0, 123, 255, 0.3); /* Blue shadow */
+  transform: rotate(5deg); /* Default tilt */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.glowing-card:hover {
+  transform: rotate(0deg) scale(1.05); /* Straighten on hover */
+  box-shadow: 0 12px 24px rgba(0, 123, 255, 0.5); /* Enhance glow */
+}
+
+.icon-container {
+  background: rgba(0, 123, 255, 0.2);
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-container:hover {
+  transform: scale(1.1);
+}
+
+.custom-text-gradient {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .card-glow {
     padding: 1em;
     position: relative;
