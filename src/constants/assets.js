@@ -32,9 +32,12 @@ import b2 from '../constants/FoodWebsite.mp4'
 import b3 from '../constants/Jewellery.mp4'
 import b4 from '../constants/shopping.mp4'
 
-import p1 from '../constants/conference.jpg'
-import p2 from '../constants/dt.jpg'
-import p3 from '../constants/InsigntSphere.png'
+import m1 from '../constants/IRS.mp4'
+import m2 from '../constants/IS.mp4'
+import m3 from '../constants/kkw-conference.mp4'
+
+import d1 from '../constants/dt.png'
+import d2 from '../constants/pq_generator.png'
 
 export const techSkills = [
   {
@@ -164,26 +167,43 @@ export const bootstrapProject = [
   },
 ]
 
-export const recentProjects = [
+export const MERNProjects = [
   {
     name: "K.K.W.I.E.E.R International Conference Website",
     TechStack: "React.js, Bootstrap, etc",
-    image : p1,
+    image : m3,
     desc: "The K.K.W.I.E.E.R International Conference Website is dedicated to the International Conference on Engineering Innovations for Sustainable Future (ICEISF 2025), scheduled for January 6th & 7th, 2025. Hosted by the K. K. Wagh Institute of Engineering Education & Research in Nashik, India, this event brings together experts, scholars, and innovators to explore cutting-edge engineering solutions that drive sustainability and future-ready technologies.",
     href: "https://clinquant-sprinkles-e2d6e4.netlify.app/"
   },
   {
+    name: "Incident Reporting System",
+    TechStack: "MongoDB (DataBase), Node.js & Express.js (Server), React.js(FrontEnd)",
+    image : m1,
+    desc: "The Incident Reporting System is a full-stack web application designed to streamline the process of reporting, tracking, and managing incidents within an organization or community. It provides users with an intuitive interface to submit incident reports, categorize them, and track their resolution status in real time.",
+    href: "Underdevelopment"
+  },
+  {
+    name: "InsightSphere - The News Aggregator App",
+    TechStack: "MongoDB (DataBase), Node.js & Express.js (Server), React.js(FrontEnd)",
+    image : m2,
+    desc: "InsightSphere is a modern and intelligent news aggregator that curates the latest news from various sources and presents it in a user-friendly interface. The app provides real-time updates, personalized recommendations, and AI-driven summaries to help users stay informed efficiently.",
+    href: "Underdevelopment"
+  }
+]
+
+export const djangoProjects = [
+  {
     name: "AI Based Answersheet Analyser",
     TechStack: "Python, Django, Bootstrap, Gemini-API",
-    image : p2,
+    image : d1,
     desc: "The AI-Based Answer Sheet Analyser is a powerful tool designed to automate the grading process for printed text answer sheets. Using advanced machine learning algorithms and OCR (Optical Character Recognition), it scans and analyzes printed responses, compares them against a model answer sheet, and evaluates answers based on keyword presence, length, and content accuracy. This system enhances efficiency, reduces manual errors, and provides detailed feedback, making it ideal for educational institutions aiming to streamline exam evaluation.",
     href: "Underdevelopment"
   },  
   {
-    name: "InsigntSphere - The News Aggregator App",
-    TechStack: "React.js(frontend), Django, News Api, Web Scraping",
-    image : p3,
-    desc: "InsightSphere is your personalized news aggregator app, designed to keep you informed and up-to-date on current events from around the world. Our intuitive app aggregates news from trusted sources, providing you with a comprehensive and unbiased view of global happenings.",
+    name: "SmartPaper - The AI Based Question Paper Generator",
+    TechStack: "Python, Django, Bootstrap, Gemini-API",
+    image : d2,
+    desc: "SmartPaper is an intelligent question paper generation system that leverages AI to create customized and structured question papers based on user-defined parameters. It streamlines the process of generating question sets for exams, quizzes, and assessments by utilizing Python, Django, Bootstrap, and the Gemini API for AI-powered content creation.",
     href: "Underdevelopment"
   }, 
 ]
