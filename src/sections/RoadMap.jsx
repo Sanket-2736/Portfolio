@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function RoadMap() {
   return (
@@ -66,18 +67,21 @@ function RoadMap() {
           <div className="flex flex-col md:flex-row items-center justify-between relative">
             <div className="w-full md:w-1/2 text-left pl-10">
               <div className="bg-purple-700 p-6 rounded-lg shadow-2xl mr-10 transition-transform transform hover:scale-105 hover:shadow-2xl">
-                <h3 className="text-xl font-semibold mb-2">Projects</h3>
+                <h3 className="text-xl font-semibold mb-2">Recent Projects</h3>
                 <ul>
                   <li>
-                    <p>GradeGuru - The Answersheet Analyser</p>
-                    <p>Technologies: <span className="font-bold">Python, TensorFlow, OpenCV</span></p>
+                    <p>Prescripto - Doctor Appointment Booking App</p>
+                    <p>Technologies: <span className="font-bold">MongoDB (DataBase), Node.js & Express.js (Server), React.js(FrontEnd), Tailwind CSS
+                    </span></p>
                     <br />
                   </li>
                   <li>
                     <p>InsightSphere - The News Aggregator App</p>
-                    <p>Technologies: <span className="font-bold">MERN Stack, News API</span></p>
+                    <p>Technologies: <span className="font-bold">MongoDB (DataBase), Node.js & Express.js (Server), React.js(FrontEnd), News API</span></p>
                     <br />
                   </li>
+
+                  <Link to='/projects' onClick={() => scrollTo(0, 0)} className='py-2 px-3 hover:bg-white rounded border transition-all duration-300 text-stone-600 hover:text-zinc-700 bg-yellow-300'>View more</Link>
                 </ul>
               </div>
             </div>

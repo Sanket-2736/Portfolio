@@ -17,24 +17,23 @@ function Skills() {
         </h3>
 
         {techSkills.map((item, index) => (
-  <div 
-    key={index} 
-    className="bg-gray-900 rounded-xl shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl"
-    style={{ width: '100%', aspectRatio: '1 / 1' }} // Ensure square card layout
-  >
-    <div className="relative w-full h-full">
-      <img 
-        src={item.img} 
-        alt={item.name} 
-        className="w-full h-full object-contain p-4" // Ensure the image fits within the square
-      />
-    </div>
-    <div className="p-4 bg-gray-800">
-      <h4 className="text-xl font-semibold text-white text-center">{item.name}</h4>
-    </div>
-  </div>
-))}
+          <div
+            key={index}
+            className="bg-gray-900 rounded-xl shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl overflow-hidden relative p-6 flex flex-col items-center">
+            <div className="w-24 h-24 bg-gray-800 rounded-full flex items-center justify-center shadow-lg border-4 border-gray-700 overflow-hidden">
+              <img 
+                src={item.img} 
+                alt={item.technology} 
+                className="w-20 h-20 object-contain rounded-full"
+              />
+            </div>
 
+            <div className="text-center mt-4">
+              <h4 className="text-2xl font-semibold text-blue-200">{item.technology}</h4>
+              <p className="text-gray-400 mt-2 text-md">{item.desc}</p>
+            </div>
+          </div>
+      ))}
 
       </div>
 

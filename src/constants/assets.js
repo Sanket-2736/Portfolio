@@ -1,24 +1,17 @@
 import javaImg from '../constants/java.png'
 import cImg from '../constants/c.png'
 import bootstrapImg from '../constants/bootstrap.jpg'
-import frontendImg from '../constants/frontend.png'
 import pythonImg from '../constants/python.png'
 import javaScriptImg from '../constants/js.png'
 import cppImg from '../constants/cpp.png'
-import phpImg from '../constants/php.png'
-import djangoImg from '../constants/django.jpg'
+import djangoImg from '../constants/django.svg'
 import reactImg from '../constants/react.png'
-import mernImg from '../constants/mern.jpeg'
 import mongoImg from '../constants/mongodb.jpg'
 
 import video1 from '../constants/spaceInvaders.mp4'
 import video2 from '../constants/PingPong.mp4'
 import video3 from '../constants/DoodleJump.mp4'
 import video4 from '../constants/flappyBird.mp4'
-import video5 from '../constants/FoodWebsite.mp4'
-import video6 from '../constants/Jewellery.mp4'
-import video7 from '../constants/Pizza.mp4'
-import video8 from '../constants/kkw-conference.mp4'
 import video9 from '../constants/snake.mp4'
 import video10 from '../constants/Whac.mp4'
 
@@ -35,50 +28,56 @@ import b4 from '../constants/shopping.mp4'
 import m1 from '../constants/IRS.mp4'
 import m2 from '../constants/IS.mp4'
 import m3 from '../constants/kkw-conference.mp4'
+import m4 from '../constants/prescripto.mp4'
 
 import d1 from '../constants/dt.png'
 import d2 from '../constants/pq_generator.png'
 
 export const techSkills = [
   {
-    name: 'Java Programming',
+    technology: "Java Programming",
     img: javaImg,
+    desc: "A versatile and powerful object-oriented programming language widely used for backend development, mobile applications, and enterprise solutions."
   },
   {
-    name: 'Python Programming',
+    technology: "Python Programming",
     img: pythonImg,
+    desc: "A high-level, interpreted programming language known for its simplicity and extensive libraries, commonly used in web development, AI, and automation."
   },
   {
-    name: 'Django Framework',
+    technology: "Django Framework",
     img: djangoImg,
+    desc: "A high-level Python web framework that enables rapid development and clean, pragmatic design, ideal for building scalable web applications."
   },
   {
-    name: 'React.js',
+    technology: "React.js",
     img: reactImg,
+    desc: "A JavaScript library for building interactive and efficient user interfaces, widely used for frontend development in modern web applications."
   },
   {
-    name: 'C Programming',
+    technology: "C Programming",
     img: cImg,
+    desc: "A powerful low-level programming language known for its efficiency and control, often used in system programming and embedded systems."
   },
   {
-    name: 'C++ Programming',
+    technology: "C++ Programming",
     img: cppImg,
+    desc: "An extension of C with object-oriented features, widely used for game development, high-performance applications, and system software."
   },
   {
-    name: 'Java Script',
+    technology: "JavaScript",
     img: javaScriptImg,
+    desc: "A dynamic programming language that enables interactive web development, often used with frameworks like React and Node.js."
   },
   {
-    name: 'Mongo DB',
+    technology: "MongoDB",
     img: mongoImg,
+    desc: "A NoSQL database known for its flexibility and scalability, used to store data in JSON-like documents for modern applications."
   },
   {
-    name: 'BootStrap',
+    technology: "Bootstrap",
     img: bootstrapImg,
-  },
-  {
-    name: 'Php Programming',
-    img: phpImg,
+    desc: "A popular frontend framework that simplifies web development with pre-built CSS components and responsive design utilities."
   }
 ];
 
@@ -176,6 +175,13 @@ export const MERNProjects = [
     href: "https://clinquant-sprinkles-e2d6e4.netlify.app/"
   },
   {
+    name: "Prescripto - Doctor Appointment Booking App",
+    TechStack: "MongoDB (DataBase), Node.js & Express.js (Server), React.js(FrontEnd), Tailwind CSS",
+    image : m4,
+    desc: "Prescripto is a MERN stack-based doctor appointment booking app that enables patients to easily find doctors, book consultations, and manage medical records. It features secure authentication, real-time notifications, online payments, digital prescriptions, and an admin dashboard for managing users and appointments.",
+    href: "Underdevelopment"
+  },
+  {
     name: "Incident Reporting System",
     TechStack: "MongoDB (DataBase), Node.js & Express.js (Server), React.js(FrontEnd)",
     image : m1,
@@ -250,3 +256,11 @@ export const questions = [
     answer: "Yes, I enjoy helping others. If you are a beginner in web development or cloud computing, feel free to reach out for guidance."
   }
 ];
+
+
+export const skillsDesc = [
+  {
+    technology: "",
+    desc: ""
+  }
+]

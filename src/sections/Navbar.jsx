@@ -8,16 +8,16 @@ const NavItems = () => {
     return (
         <ul className="nav-ul">
             <li className="nav-li">
-                <Link to='/' className="nav-li_a">Home</Link>
+                <Link onClick={() => scrollTo(0, 0)} to='/' className="nav-li_a">Home</Link>
             </li>
             <li className="nav-li">
-                <Link to='/skills' className="nav-li_a">Skills</Link>
+                <Link onClick={() => scrollTo(0, 0)} to='/skills' className="nav-li_a">Skills</Link>
             </li>
             <li className="nav-li">
-                <Link to='/projects' className="nav-li_a">Projects</Link>
+                <Link onClick={() => scrollTo(0, 0)} to='/projects' className="nav-li_a">Projects</Link>
             </li>
             <li className="nav-li">
-                <Link to='/contact' className="nav-li_a">Contact</Link>
+                <Link onClick={() => scrollTo(0, 0)} to='/contact' className="nav-li_a">Contact</Link>
             </li>
         </ul>
     );

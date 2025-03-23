@@ -15,16 +15,16 @@ const Footer = () => {
           <h4 className="text-lg font-semibold">Quick Links</h4>
           <ul className="space-y-1">
           <li className="nav-li">
-                <Link to='/' className="">Home</Link>
+                <Link onClick={() => scrollTo(0, 0)} to='/' className="">Home</Link>
             </li>
             <li className="nav-li">
-                <Link to='/skills' className="">Skills</Link>
+                <Link onClick={() => scrollTo(0, 0)} to='/skills' className="">Skills</Link>
             </li>
             <li className="nav-li">
-                <Link to='/projects' className="">Projects</Link>
+                <Link onClick={() => scrollTo(0, 0)} to='/projects' className="">Projects</Link>
             </li>
             <li className="nav-li">
-                <Link to='/contact' className="">Contact</Link>
+                <Link onClick={() => scrollTo(0, 0)} to='/contact' className="">Contact</Link>
             </li>
           </ul>
         </div>
