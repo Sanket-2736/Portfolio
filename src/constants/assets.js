@@ -29,6 +29,7 @@ import m1 from '../constants/IRS.mp4'
 import m2 from '../constants/IS.mp4'
 import m3 from '../constants/kkw-conference.mp4'
 import m4 from '../constants/prescripto.mp4'
+import m5 from '../constants/dsa.mp4'
 
 import d1 from '../constants/dt.png'
 import d2 from '../constants/pq_generator.png'
@@ -173,6 +174,13 @@ export const MERNProjects = [
     image : m3,
     desc: "The K.K.W.I.E.E.R International Conference Website is dedicated to the International Conference on Engineering Innovations for Sustainable Future (ICEISF 2025), scheduled for January 6th & 7th, 2025. Hosted by the K. K. Wagh Institute of Engineering Education & Research in Nashik, India, this event brings together experts, scholars, and innovators to explore cutting-edge engineering solutions that drive sustainability and future-ready technologies.",
     href: "https://clinquant-sprinkles-e2d6e4.netlify.app/"
+  },
+  {
+    name: "CodeVista - DSA Visualizer",
+    TechStack: "React.js, Tailwind, etc",
+    image : m5,
+    desc: "Created an interactive web app to visualize data structures (Stacks, Queues, Linked Lists) and algorithms (Binary Search, Merge Sort). Implemented recursive problems like N-Queens and Tower of Hanoi. Built with React and Node.js, providing real-time updates and responsive design.",
+    href: "https://dsa-visualiser-five.vercel.app/tower-of-hanoi"
   },
   {
     name: "Prescripto - Doctor Appointment Booking App",
