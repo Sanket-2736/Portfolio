@@ -1,41 +1,113 @@
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { questions } from '../constants/assets';
 
 function Faqs() {
-  // Define state for active question
   const [activeQuestion, setActiveQuestion] = useState(null);
 
-  // Function to toggle the active question
   const toggleAnswer = (index) => {
     setActiveQuestion(activeQuestion === index ? null : index);
   };
 
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  };
+
+  const questionVariants = {
+    hidden: { y: 10, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.3
+      }
+    }
+  };
+
+  const answerVariants = {
+    open: {
+      opacity: 1,
+      height: 'auto',
+      transition: {
+        duration: 0.3,
+        ease: "easeInOut"
+      }
+    },
+    closed: {
+      opacity: 0,
+      height: 0,
+      transition: {
+        duration: 0.2,
+        ease: "easeInOut"
+      }
+    }
+  };
+
+  const chevronVariants = {
+    up: { rotate: 180 },
+    down: { rotate: 0 }
+  };
+
   return (
-    <div className="mt-10 w-full max-w-4xl">
-      <h2 className="text-3xl font-semibold text-blue-400 mb-5">Frequently Asked Questions</h2>
+    <motion.div 
+      className="mt-10 w-full max-w-4xl"
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+    >
+      <motion.h2 
+        className="text-3xl font-semibold text-blue-400 mb-5"
+        variants={questionVariants}
+      >
+        Frequently Asked Questions
+      </motion.h2>
+      
       {questions.map((item, index) => (
-        <div key={index} className="border-b border-gray-700 py-4">
-          <button
+        <motion.div 
+          key={index} 
+          className="border-b border-gray-700 py-4"
+          variants={questionVariants}
+        >
+          <motion.button
             onClick={() => toggleAnswer(index)}
             className="w-full flex justify-between items-center text-left text-lg font-medium text-white focus:outline-none"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
           >
             {item.question}
-            {activeQuestion === index ? (
-              <i className="fas fa-chevron-up text-blue-400 transition-transform duration-300"></i>
-            ) : (
-              <i className="fas fa-chevron-down text-blue-400 transition-transform duration-300"></i>
+            <motion.i 
+              className="fas text-blue-400"
+              variants={chevronVariants}
+              animate={activeQuestion === index ? "up" : "down"}
+              transition={{ duration: 0.3 }}
+            >
+              {activeQuestion === index ? '▲' : '▼'}
+            </motion.i>
+          </motion.button>
+
+          <AnimatePresence>
+            {activeQuestion === index && (
+              <motion.div
+                className="mt-2 overflow-hidden"
+                variants={answerVariants}
+                initial="closed"
+                animate="open"
+                exit="closed"
+              >
+                <p className="text-gray-300">{item.answer}</p>
+              </motion.div>
             )}
-          </button>
-          <div
-            className={`mt-2 overflow-hidden transition-all duration-500 ease-in-out ${
-              activeQuestion === index ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-            }`}
-          >
-            <p className="text-gray-300">{item.answer}</p>
-          </div>
-        </div>
+          </AnimatePresence>
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 }
 

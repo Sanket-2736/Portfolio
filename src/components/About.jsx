@@ -24,8 +24,11 @@ function About() {
             Hi, I'm <span className="text-blue-400">Sanket</span> 👋
           </p>
           <p className="grid-subtext text-gray-300 mt-2 leading-relaxed max-w-md">
-            As a fresher, I have honed my skills in Frontend, Backend, and Data Structures & Algorithms, with a focused and dedicated approach.
+            As a fresher, I’ve built strong skills in C, C++, Python, and Java (Advanced), with hands-on experience in Spring Boot and the MERN stack for full-stack development.
           </p>
+
+
+
         </div>
 
         {/* Column 2 */}
@@ -37,7 +40,7 @@ function About() {
             Tech Stack 💻
           </p>
           <p className="grid-subtext text-gray-300 mt-2 leading-relaxed max-w-md">
-            I have a strong foundation in DSA using Java, and I'm currently enhancing my development skills using the MERN stack for full-stack development.
+            I have a strong foundation in DSA using Java, and I'm currently enhancing my development skills using the MERN stack and SPRINGBOOT for full-stack development.
           </p>
         </div>
 
@@ -50,8 +53,9 @@ function About() {
             Projects 🚀
           </p>
           <p className="grid-subtext text-gray-300 mt-2 leading-relaxed max-w-md">
-            I've built projects using React, including games like Whac-A-Mole, Candy Crush, and Space Invaders using JavaScript.
+            I've built full-stack and interactive applications using React, including an Alumni Connect Platform, a real-time Chat App, a DSA Visualizer, and AI-based Question Paper Generator and Answer Sheet Analyzer.
           </p>
+
         </div>
 
         {/* Column 4 */}
@@ -63,8 +67,9 @@ function About() {
             Recent Focus 🔍
           </p>
           <p className="grid-subtext text-gray-300 mt-2 leading-relaxed max-w-md">
-            My recent work involves responsive designs using Bootstrap and building dynamic web applications with React and Node.js.
+            My recent work includes building full-stack applications using the MERN stack and Spring Boot, along with creating responsive designs using Bootstrap.
           </p>
+
         </div>
       </div>
     </section>

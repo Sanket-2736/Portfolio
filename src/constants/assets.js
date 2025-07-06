@@ -7,6 +7,9 @@ import cppImg from '../constants/cpp.png'
 import djangoImg from '../constants/django.svg'
 import reactImg from '../constants/react.png'
 import mongoImg from '../constants/mongodb.jpg'
+import springbootImg from '../constants/springboot.png'
+import mysqlImg from '../constants/mysql_.png'
+import tailwindImg from '../constants/tailwind.png'
 
 import video1 from '../constants/spaceInvaders.mp4'
 import video2 from '../constants/PingPong.mp4'
@@ -35,6 +38,7 @@ import d1 from '../constants/dt.png'
 import d2 from '../constants/pq_generator.png'
 
 export const techSkills = [
+  // Programming Languages
   {
     technology: "Java Programming",
     img: javaImg,
@@ -44,16 +48,6 @@ export const techSkills = [
     technology: "Python Programming",
     img: pythonImg,
     desc: "A high-level, interpreted programming language known for its simplicity and extensive libraries, commonly used in web development, AI, and automation."
-  },
-  {
-    technology: "Django Framework",
-    img: djangoImg,
-    desc: "A high-level Python web framework that enables rapid development and clean, pragmatic design, ideal for building scalable web applications."
-  },
-  {
-    technology: "React.js",
-    img: reactImg,
-    desc: "A JavaScript library for building interactive and efficient user interfaces, widely used for frontend development in modern web applications."
   },
   {
     technology: "C Programming",
@@ -70,17 +64,47 @@ export const techSkills = [
     img: javaScriptImg,
     desc: "A dynamic programming language that enables interactive web development, often used with frameworks like React and Node.js."
   },
+
+  // Frameworks & Libraries
+  {
+    technology: "SpringBoot ",
+    img: springbootImg,
+    desc: "A Java-based framework that simplifies backend development by providing production-ready defaults, embedded servers, and streamlined configuration for building robust web applications and RESTful APIs."
+  },
+  {
+    technology: "Django Framework",
+    img: djangoImg,
+    desc: "A high-level Python web framework that enables rapid development and clean, pragmatic design, ideal for building scalable web applications."
+  },
+  {
+    technology: "React.js",
+    img: reactImg,
+    desc: "A JavaScript library for building interactive and efficient user interfaces, widely used for frontend development in modern web applications."
+  },
+  {
+    technology: "Bootstrap CSS",
+    img: bootstrapImg,
+    desc: "A popular frontend framework that simplifies web development with pre-built CSS components and responsive design utilities."
+  },
+  {
+    technology: "Tailwind CSS",
+    img: tailwindImg,
+    desc: "A utility-first CSS framework that enables rapid UI development by composing custom designs directly in your HTML using pre-defined classes."
+  },
+
+  // Database
   {
     technology: "MongoDB",
     img: mongoImg,
     desc: "A NoSQL database known for its flexibility and scalability, used to store data in JSON-like documents for modern applications."
   },
   {
-    technology: "Bootstrap",
-    img: bootstrapImg,
-    desc: "A popular frontend framework that simplifies web development with pre-built CSS components and responsive design utilities."
+    technology: "MySQL",
+    img: mysqlImg,
+    desc: "A widely-used open-source relational database management system that stores structured data and supports SQL for efficient querying, widely adopted in web and enterprise applications."
   }
 ];
+
 
 export const gamesProject = [
   {
@@ -143,6 +167,23 @@ export const certifications = [
     image: c2
   }  
 ]
+
+import internship_certificate from "../constants/xmega-certificate.jpg"; // Update path
+
+export const internshipDetails = [
+  {
+    company: "XMEGA",
+    role: "Web Development Intern",
+    duration: "March 15, 2025 – April 26, 2025",
+    project: "Alumni Connect Platform",
+    description:
+      "Worked on developing an Alumni Connect Platform using the MERN stack (MongoDB, Express.js, React, Node.js). Implemented features like user authentication, real-time interaction, and responsive UI to enable seamless alumni-student engagement.",
+    techStack: ["MongoDB", "Express.js", "React", "Node.js"],
+    certificateImage: internship_certificate
+  }
+];
+
+
 
 export const bootstrapProject = [
   {
