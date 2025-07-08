@@ -28,81 +28,31 @@ import b2 from '../constants/FoodWebsite.mp4'
 import b3 from '../constants/Jewellery.mp4'
 import b4 from '../constants/shopping.mp4'
 
-import m1 from '../constants/IRS.mp4'
-import m2 from '../constants/IS.mp4'
-import m3 from '../constants/kkw-conference.mp4'
-import m4 from '../constants/prescripto.mp4'
-import m5 from '../constants/dsa.mp4'
+import m1 from '../constants/conference.png'
+import m2 from '../constants/news_aggregator.png'
+import m3 from '../constants/dsa_visualizer.png'
+import m4 from '../constants/appointment.png'
+import m5 from '../constants/incident.png'
 
 import d1 from '../constants/dt.png'
 import d2 from '../constants/pq_generator.png'
 
 export const techSkills = [
-  // Programming Languages
-  {
-    technology: "Java Programming",
-    img: javaImg,
-    desc: "A versatile and powerful object-oriented programming language widely used for backend development, mobile applications, and enterprise solutions."
-  },
-  {
-    technology: "Python Programming",
-    img: pythonImg,
-    desc: "A high-level, interpreted programming language known for its simplicity and extensive libraries, commonly used in web development, AI, and automation."
-  },
-  {
-    technology: "C Programming",
-    img: cImg,
-    desc: "A powerful low-level programming language known for its efficiency and control, often used in system programming and embedded systems."
-  },
-  {
-    technology: "C++ Programming",
-    img: cppImg,
-    desc: "An extension of C with object-oriented features, widely used for game development, high-performance applications, and system software."
-  },
-  {
-    technology: "JavaScript",
-    img: javaScriptImg,
-    desc: "A dynamic programming language that enables interactive web development, often used with frameworks like React and Node.js."
-  },
+  { technology: "Java Programming", img: javaImg, level: "Intermediate", category: "Languages" },
+  { technology: "Python Programming", img: pythonImg, level: "Intermediate", category: "Languages" },
+  { technology: "C Programming", img: cImg, level: "Intermediate", category: "Languages" },
+  { technology: "C++ Programming", img: cppImg, level: "Intermediate", category: "Languages" },
+  { technology: "JavaScript", img: javaScriptImg, level: "Intermediate", category: "Languages" },
 
-  // Frameworks & Libraries
-  {
-    technology: "SpringBoot ",
-    img: springbootImg,
-    desc: "A Java-based framework that simplifies backend development by providing production-ready defaults, embedded servers, and streamlined configuration for building robust web applications and RESTful APIs."
-  },
-  {
-    technology: "Django Framework",
-    img: djangoImg,
-    desc: "A high-level Python web framework that enables rapid development and clean, pragmatic design, ideal for building scalable web applications."
-  },
-  {
-    technology: "React.js",
-    img: reactImg,
-    desc: "A JavaScript library for building interactive and efficient user interfaces, widely used for frontend development in modern web applications."
-  },
-  {
-    technology: "Bootstrap CSS",
-    img: bootstrapImg,
-    desc: "A popular frontend framework that simplifies web development with pre-built CSS components and responsive design utilities."
-  },
-  {
-    technology: "Tailwind CSS",
-    img: tailwindImg,
-    desc: "A utility-first CSS framework that enables rapid UI development by composing custom designs directly in your HTML using pre-defined classes."
-  },
+  { technology: "SpringBoot", img: springbootImg, level: "Intermediate", category: "Frameworks" },
+  { technology: "Django Framework", img: djangoImg, level: "Intermediate", category: "Frameworks" },
 
-  // Database
-  {
-    technology: "MongoDB",
-    img: mongoImg,
-    desc: "A NoSQL database known for its flexibility and scalability, used to store data in JSON-like documents for modern applications."
-  },
-  {
-    technology: "MySQL",
-    img: mysqlImg,
-    desc: "A widely-used open-source relational database management system that stores structured data and supports SQL for efficient querying, widely adopted in web and enterprise applications."
-  }
+  { technology: "React.js", img: reactImg, level: "Intermediate", category: "Libraries" },
+  { technology: "Bootstrap CSS", img: bootstrapImg, level: "Intermediate", category: "Libraries" },
+  { technology: "Tailwind CSS", img: tailwindImg, level: "Intermediate", category: "Libraries" },
+
+  { technology: "MongoDB", img: mongoImg, level: "Intermediate", category: "Databases" },
+  { technology: "MySQL", img: mysqlImg, level: "Intermediate", category: "Databases" },
 ];
 
 
@@ -183,8 +133,6 @@ export const internshipDetails = [
   }
 ];
 
-
-
 export const bootstrapProject = [
   {
     title: 'Pizza Store App',
@@ -211,40 +159,99 @@ export const bootstrapProject = [
 export const MERNProjects = [
   {
     name: "K.K.W.I.E.E.R International Conference Website",
-    TechStack: "React.js, Bootstrap, etc",
-    image : m3,
-    desc: "The K.K.W.I.E.E.R International Conference Website is dedicated to the International Conference on Engineering Innovations for Sustainable Future (ICEISF 2025), scheduled for January 6th & 7th, 2025. Hosted by the K. K. Wagh Institute of Engineering Education & Research in Nashik, India, this event brings together experts, scholars, and innovators to explore cutting-edge engineering solutions that drive sustainability and future-ready technologies.",
-    href: "https://clinquant-sprinkles-e2d6e4.netlify.app/"
+    techStack: ["React.js", "Bootstrap", "Netlify"],
+    image: m1,
+    description:
+      "The official website for the International Conference on Engineering Innovations for Sustainable Future (ICEISF 2025), hosted by KKWIEER, Nashik. It provides details about the event, speakers, registration, and schedule.",
+    features: [
+      "Responsive multi-page UI",
+      "Conference schedule and speaker listing",
+      "Live countdown and smooth scroll",
+      "Built with React.js and Bootstrap",
+    ],
+    github: "https://github.com/Sanket-2736/KKW-Conference-Website",
+    live: "https://clinquant-sprinkles-e2d6e4.netlify.app/",
+    status: "Completed",
+    duration: "2 weeks",
+    role: "Frontend Developer"
   },
+
   {
     name: "CodeVista - DSA Visualizer",
-    TechStack: "React.js, Tailwind, etc",
-    image : m5,
-    desc: "Created an interactive web app to visualize data structures (Stacks, Queues, Linked Lists) and algorithms (Binary Search, Merge Sort). Implemented recursive problems like N-Queens and Tower of Hanoi. Built with React and Node.js, providing real-time updates and responsive design.",
-    href: "https://dsa-visualiser-five.vercel.app/tower-of-hanoi"
+    techStack: ["React.js", "Tailwind CSS", "Framer Motion", "Vercel"],
+    image: m3,
+    description:
+      "Interactive visualizer for Data Structures and Algorithms. Visualizes how Stacks, Queues, Linked Lists, and algorithms like Binary Search, Merge Sort, N-Queens, and Tower of Hanoi work.",
+    features: [
+      "Dynamic animations using Framer Motion",
+      "Step-by-step algorithm walkthrough",
+      "Responsive design",
+      "Recursive and iterative logic for algorithms",
+    ],
+    github: "https://github.com/Sanket-2736/dsa-visualiser",
+    live: "https://dsa-visualiser-five.vercel.app/",
+    status: "Completed",
+    duration: "3 weeks",
+    role: "Full Stack Developer"
   },
+
   {
     name: "Prescripto - Doctor Appointment Booking App",
-    TechStack: "MongoDB (DataBase), Node.js & Express.js (Server), React.js(FrontEnd), Tailwind CSS",
-    image : m4,
-    desc: "Prescripto is a MERN stack-based doctor appointment booking app that enables patients to easily find doctors, book consultations, and manage medical records. It features secure authentication, real-time notifications, online payments, digital prescriptions, and an admin dashboard for managing users and appointments.",
-    href: "Underdevelopment"
+    techStack: ["MongoDB", "Express.js", "React.js", "Node.js", "Tailwind CSS"],
+    image: m4,
+    description:
+      "A full-stack healthcare web application for booking doctor appointments online. Features include secure authentication, online payments, and a doctor-patient dashboard.",
+    features: [
+      "Role-based login (Admin, Doctor, Patient)",
+      "Digital prescriptions and medical record storage",
+      "Real-time notifications",
+      "Stripe payment integration",
+    ],
+    github: "https://github.com/Sanket-2736/Appointment-booking-app",
+    live: "Underdevelopment",
+    status: "Under Development",
+    duration: "Ongoing (Since June 2025)",
+    role: "Full Stack Developer"
   },
+
   {
     name: "Incident Reporting System",
-    TechStack: "MongoDB (DataBase), Node.js & Express.js (Server), React.js(FrontEnd)",
-    image : m1,
-    desc: "The Incident Reporting System is a full-stack web application designed to streamline the process of reporting, tracking, and managing incidents within an organization or community. It provides users with an intuitive interface to submit incident reports, categorize them, and track their resolution status in real time.",
-    href: "Underdevelopment"
+    techStack: ["MongoDB", "Express.js", "React.js", "Node.js"],
+    image: m5,
+    description:
+      "A reporting platform that enables employees or community members to log, track, and manage incident reports. Admins can update statuses and assign resolutions.",
+    features: [
+      "User and admin dashboards",
+      "Incident categories and filters",
+      "Real-time status updates",
+      "Notification system via email",
+    ],
+    github: "https://github.com/Sanket-2736/Incident-Reporting-System",
+    live: "Underdevelopment",
+    status: "Under Development",
+    duration: "Ongoing (Since May 2025)",
+    role: "Backend + UI Developer"
   },
+
   {
-    name: "InsightSphere - The News Aggregator App",
-    TechStack: "MongoDB (DataBase), Node.js & Express.js (Server), React.js(FrontEnd)",
-    image : m2,
-    desc: "InsightSphere is a modern and intelligent news aggregator that curates the latest news from various sources and presents it in a user-friendly interface. The app provides real-time updates, personalized recommendations, and AI-driven summaries to help users stay informed efficiently.",
-    href: "Underdevelopment"
+    name: "InsightSphere - News Aggregator App",
+    techStack: ["MongoDB", "Express.js", "React.js", "Node.js", "News API"],
+    image: m2,
+    description:
+      "A smart news aggregator that fetches headlines from multiple sources and summarizes them using AI. Users can filter by category, save articles, and share summaries.",
+    features: [
+      "News API integration",
+      "Search and category filters",
+      "AI-based article summaries",
+      "User authentication & bookmarking",
+    ],
+    github: "https://github.com/Sanket-2736/InsightSphere_New",
+    live: "Underdevelopment",
+    status: "Under Development",
+    duration: "Started July 2025",
+    role: "Full Stack Developer"
   }
-]
+];
 
 export const djangoProjects = [
   {
