@@ -1,30 +1,48 @@
-# My Portfolio
+# 🌐 My Developer Portfolio
 
-Welcome to my portfolio! This project showcases my work, skills, and projects using React and Vite.
+Welcome to my personal portfolio website! This project showcases my skills, projects, and experience using modern web development technologies like React and Vite. It's designed to be fast, responsive, and easy to maintain.
 
-## Table of Contents
+---
 
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-- [Available Scripts](#available-scripts)
-- [Features](#features)
-- [License](#license)
-- [Contact](#contact)
+## 📚 Table of Contents
 
-## Technologies Used
+- [🚀 Demo](#-demo)
+- [🛠 Technologies Used](#-technologies-used)
+- [⚙️ Getting Started](#️-getting-started)
+- [📜 Available Scripts](#-available-scripts)
+- [✨ Features](#-features)
+- [📝 License](#-license)
+- [📬 Contact](#-contact)
 
-This portfolio is built using the following technologies:
+---
 
-- **React**: A JavaScript library for building user interfaces.
-- **Vite**: A fast build tool that provides a better development experience.
-- **ESLint**: A tool for identifying and fixing problems in JavaScript code.
-- **Tailwind CSS** (or any other CSS framework you might be using): A utility-first CSS framework for styling.
+## 🚀 Demo
 
-## Getting Started
+🌍 **Live Preview:** [your-portfolio-link](https://your-portfolio-link.com)  
+📸 **Screenshot:**
 
-To get a local copy of this project up and running, follow these steps:
+![Portfolio Screenshot](./public/preview.png)
 
-1. Clone the repository:
+---
 
-   ```bash
-   git clone https://github.com/your-username/your-portfolio.git
+## 🛠 Technologies Used
+
+This project is built with:
+
+- ⚛️ [**React**](https://reactjs.org/): Frontend JavaScript library
+- ⚡ [**Vite**](https://vitejs.dev/): Lightning-fast build tool
+- 🎨 [**Tailwind CSS**](https://tailwindcss.com/): Utility-first CSS framework
+- 🧹 [**ESLint**](https://eslint.org/): Linter for clean code
+- 🔍 [**Prettier**](https://prettier.io/): Code formatter
+
+---
+
+## ⚙️ Getting Started
+
+To set up the project locally:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Sanket-2736/Portfolio.git
+cd your-portfolio
