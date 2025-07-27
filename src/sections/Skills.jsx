@@ -114,7 +114,6 @@ function Skills() {
         </div>
       </section>
 
-      {/* Rest of the sections remain unchanged */}
       <div className="my-12">
         <h3 className="text-2xl font-bold text-gray-300 text-center mb-6 tracking-wide">
           My Recent Certifications:

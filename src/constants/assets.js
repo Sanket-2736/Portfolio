@@ -17,6 +17,7 @@ import video3 from '../constants/DoodleJump.mp4'
 import video4 from '../constants/flappyBird.mp4'
 import video9 from '../constants/snake.mp4'
 import video10 from '../constants/Whac.mp4'
+import video11 from '../constants/candy-crush.mp4'
 
 import c1 from '../constants/JsCertificate.jpg'
 import c2 from '../constants/IntroToFrontEnd.jpg'
@@ -37,24 +38,25 @@ import m5 from '../constants/incident.png'
 import d1 from '../constants/dt.png'
 import d2 from '../constants/pq_generator.png'
 
+import internship_certificate from "../constants/xmega-certificate.jpg"; // Update path
+
 export const techSkills = [
-  { technology: "Java Programming", img: javaImg, level: "Intermediate", category: "Languages" },
+  { technology: "Java Programming", img: javaImg, level: "Advanced", category: "Languages" },
   { technology: "Python Programming", img: pythonImg, level: "Intermediate", category: "Languages" },
-  { technology: "C Programming", img: cImg, level: "Intermediate", category: "Languages" },
+  { technology: "C Programming", img: cImg, level: "Beginner", category: "Languages" },
   { technology: "C++ Programming", img: cppImg, level: "Intermediate", category: "Languages" },
-  { technology: "JavaScript", img: javaScriptImg, level: "Intermediate", category: "Languages" },
+  { technology: "JavaScript", img: javaScriptImg, level: "Advanced", category: "Languages" },
 
   { technology: "SpringBoot", img: springbootImg, level: "Intermediate", category: "Frameworks" },
-  { technology: "Django Framework", img: djangoImg, level: "Intermediate", category: "Frameworks" },
+  { technology: "Django Framework", img: djangoImg, level: "Advanced", category: "Frameworks" },
 
-  { technology: "React.js", img: reactImg, level: "Intermediate", category: "Libraries" },
+  { technology: "React.js", img: reactImg, level: "Advanced", category: "Libraries" },
   { technology: "Bootstrap CSS", img: bootstrapImg, level: "Intermediate", category: "Libraries" },
-  { technology: "Tailwind CSS", img: tailwindImg, level: "Intermediate", category: "Libraries" },
+  { technology: "Tailwind CSS", img: tailwindImg, level: "Beginner", category: "Libraries" },
 
   { technology: "MongoDB", img: mongoImg, level: "Intermediate", category: "Databases" },
-  { technology: "MySQL", img: mysqlImg, level: "Intermediate", category: "Databases" },
+  { technology: "MySQL", img: mysqlImg, level: "Advanced", category: "Databases" },
 ];
-
 
 export const gamesProject = [
   {
@@ -62,6 +64,12 @@ export const gamesProject = [
     desc: "In this classic arcade-style game, the player controls a spaceship and aims to shoot down waves of invading aliens. The primary objective is to eliminate all invaders while avoiding their attacks.",
     videoSrc: video1,
     github: "https://github.com/Sanket-2736/Front-End-Game-Projects/tree/main/Space%20Invaders"
+  },
+  {
+    title: "Candy Crush",
+    desc: "A colorful match-3 puzzle game where players swap adjacent candies to form rows or columns of three or more matching candies. Clearing matches earns points and triggers cascades. Features increasing difficulty and score tracking.",
+    videoSrc: video11,
+    github: "https://github.com/Sanket-2736/Front-End-Game-Projects/tree/main/Candy%20Crush"
   },
   {
     title: "Ping Pong",
@@ -118,8 +126,6 @@ export const certifications = [
   }  
 ]
 
-import internship_certificate from "../constants/xmega-certificate.jpg"; // Update path
-
 export const internshipDetails = [
   {
     company: "XMEGA",
@@ -136,25 +142,29 @@ export const internshipDetails = [
 export const bootstrapProject = [
   {
     title: 'Pizza Store App',
-    desc : 'This project showcases a responsive pizza store website designed to provide users with an intuitive and enjoyable online ordering experience. ',
-    video : b1
+    desc: 'This project showcases a responsive pizza store website designed to provide users with an intuitive and enjoyable online ordering experience.',
+    video: b1,
+    github: 'https://github.com/Sanket-2736/Bootstrap-Projects/tree/main/Food%20Website'
   },
   {
     title: 'Jewellery Store Website',
-    desc : 'This project features a sophisticated jewelry store website designed to offer an elegant online shopping experience for customers looking for exquisite pieces.',
-    video : b2
+    desc: 'This project features a sophisticated jewelry store website designed to offer an elegant online shopping experience for customers looking for exquisite pieces.',
+    video: b3,
+    github: 'https://github.com/Sanket-2736/Bootstrap-Projects/tree/main/E-Shopping'
   },
   {
     title: 'Hotel Website',
-    desc : 'This project showcases a dynamic hotel website designed to provide potential guests with an immersive experience while exploring accommodation options.',
-    video : b3
+    desc: 'This project showcases a dynamic hotel website designed to provide potential guests with an immersive experience while exploring accommodation options.',
+    video: b2,
+    github: 'https://github.com/Sanket-2736/Bootstrap-Projects/tree/main/Hotel%20Website'
   },
   {
     title: 'E-Commerce Website',
-    desc : 'This eCommerce website serves as a dynamic platform for users to explore a wide range of products, from electronics to fashion and home goods.',
-    video : b4
+    desc: 'This eCommerce website serves as a dynamic platform for users to explore a wide range of products, from electronics to fashion and home goods.',
+    video: b4,
+    github: 'https://github.com/Sanket-2736/Bootstrap-Projects/tree/main/E-Commerce'
   },
-]
+];
 
 export const MERNProjects = [
   {
@@ -256,19 +266,27 @@ export const MERNProjects = [
 export const djangoProjects = [
   {
     name: "AI Based Answersheet Analyser",
-    TechStack: "Python, Django, Bootstrap, Gemini-API",
-    image : d1,
+    techStack: "Python, Django, Bootstrap, Gemini-API",  // <-- changed
+    image: d1,
     desc: "The AI-Based Answer Sheet Analyser is a powerful tool designed to automate the grading process for printed text answer sheets. Using advanced machine learning algorithms and OCR (Optical Character Recognition), it scans and analyzes printed responses, compares them against a model answer sheet, and evaluates answers based on keyword presence, length, and content accuracy. This system enhances efficiency, reduces manual errors, and provides detailed feedback, making it ideal for educational institutions aiming to streamline exam evaluation.",
-    href: "Underdevelopment"
-  },  
+    href: "Underdevelopment",
+    github: "https://github.com/Sanket-2736/AI-Based-Answersheet-Analyser",
+    duration: "5 months",
+    status: "In Progress",
+    role: "Full-stack Developer"
+  },
   {
     name: "SmartPaper - The AI Based Question Paper Generator",
-    TechStack: "Python, Django, Bootstrap, Gemini-API",
-    image : d2,
+    techStack: "Python, Django, Bootstrap, Gemini-API",  // <-- changed
+    image: d2,
     desc: "SmartPaper is an intelligent question paper generation system that leverages AI to create customized and structured question papers based on user-defined parameters. It streamlines the process of generating question sets for exams, quizzes, and assessments by utilizing Python, Django, Bootstrap, and the Gemini API for AI-powered content creation.",
-    href: "Underdevelopment"
-  }, 
-]
+    href: "Underdevelopment",
+    github: "https://github.com/Sanket-2736/Question-Paper-Generator/tree/main/qpaper_project",
+    duration: "6 months",
+    status: "In Progress",
+    role: "Backend Developer"
+  }
+];
 
 export const questions = [
   {
@@ -312,7 +330,6 @@ export const questions = [
     answer: "Yes, I enjoy helping others. If you are a beginner in web development or cloud computing, feel free to reach out for guidance."
   }
 ];
-
 
 export const skillsDesc = [
   {
