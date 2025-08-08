@@ -7,6 +7,8 @@ import leetcodeImg from '../constants/leetcode.png';
 import hackerrankImg from '../constants/hackerrank.webp';
 import { Download, Linkedin, Github, Mail, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { TypeAnimation } from 'react-type-animation';
+import { Link } from 'react-router-dom';
 
 function Hero() {
   return (
@@ -107,14 +109,20 @@ function Hero() {
               </motion.span>
             </motion.p>
 
-            <motion.p 
-              className="text-lg sm:text-xl md:text-2xl font-medium text-gray-300 mb-6 leading-relaxed"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-            >
-              Passionate <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-yellow-500">DSA Enthusiast</span> & <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Full Stack Developer</span>
-            </motion.p>
+            <TypeAnimation
+              sequence={[
+                'Full Stack Developer',
+                2000,
+                'DSA Enthusiast',
+                2000,
+                'Open Source Contributor',
+                2000
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+              className="text-lg sm:text-xl md:text-2xl font-semibold text-amber-300 mb-4"
+            />
 
             <motion.p 
               className="text-gray-300 mb-8 text-base sm:text-lg max-w-lg leading-relaxed"
@@ -154,10 +162,10 @@ function Hero() {
                   boxShadow: "0 10px 25px -5px rgba(124, 58, 237, 0.3)"
                 }}
                 whileTap={{ scale: 0.95 }}
-                href="mailto:sanketbelekar29@gmail.com"
+                href="/contact"
                 className="flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-indigo-600 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 group"
               >
-                <Mail className="w-5 h-5 transition-transform group-hover:translate-y-[-2px]" />
+                <Link to="/contact" className="w-5 h-5 transition-transform group-hover:translate-y-[-2px]" />
                 Contact Me
                 <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300" />
               </motion.a>

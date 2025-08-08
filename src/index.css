@@ -262,6 +262,10 @@ body {
   background: none;
 }
 
+body {
+  cursor: url('./constants/cursor-png.png'), auto;
+}
+
 /* CSS */
 .button-64 {
   align-items: center;
