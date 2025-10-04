@@ -111,6 +111,8 @@ function Hero() {
 
             <TypeAnimation
               sequence={[
+                'GGSOC 2025 Contributor',
+                2000,
                 'Full Stack Developer',
                 2000,
                 'DSA Enthusiast',
