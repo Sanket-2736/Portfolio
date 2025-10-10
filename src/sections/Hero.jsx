@@ -115,9 +115,9 @@ function Hero() {
                 2000,
                 'Full Stack Developer',
                 2000,
-                'DSA Enthusiast',
+                '5-Star on HackerRank for Java, C and Python',
                 2000,
-                'Open Source Contributor',
+                'Leetcode 500+',
                 2000
               ]}
               wrapper="span"
