@@ -1,11 +1,17 @@
 import React from 'react';
-import { bootstrapProject, djangoProjects, gamesProject, MERNProjects } from '../constants/assets';
+import {
+  bootstrapProject,
+  djangoProjects,
+  gamesProject,
+  MERNProjects,
+  NextJSProjects, // ✅ import your Next.js projects array
+} from '../constants/assets';
 import './Projects.css';
-import MERNProjectCard from './MERNProjectCard'; // updated detailed card
-import JavaScriptProjects from '../components/ProjectCard';
+import MERNProjectCard from './MERNProjectCard';
 import ProjectCard from '../components/ProjectCard';
 import BootstrapProjectCard from '../components/BootstrapProjectCard';
 import DjangoProjectCard from '../components/DjangoProjectCard';
+import NextJSProjectCard from '../components/NextJSProjectCard'; // ✅ import new component
 
 function Projects() {
   return (
@@ -18,6 +24,16 @@ function Projects() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
           {MERNProjects.map((item, index) => (
             <MERNProjectCard key={index} project={item} />
+          ))}
+        </div>
+      </div>
+
+      {/* ✅ Next.js Projects */}
+      <div className="max-w-7xl w-full mb-10">
+        <h2 className="text-3xl text-blue-400 mb-5">Next.js Projects</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
+          {NextJSProjects.map((item, index) => (
+            <NextJSProjectCard key={index} project={item} />
           ))}
         </div>
       </div>
@@ -48,14 +64,11 @@ function Projects() {
           <span className="text-white">JavaScript</span> Projects:
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {
-            gamesProject.map((item, index) => (
-               <ProjectCard item={item} key={index}/>
-            ))
-          }
+          {gamesProject.map((item, index) => (
+            <ProjectCard item={item} key={index}/>
+          ))}
         </div>
       </div>
-
     </div>
   );
 }

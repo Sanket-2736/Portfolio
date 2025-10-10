@@ -33,7 +33,7 @@ import m1 from '../constants/conference.png'
 import m2 from '../constants/news_aggregator.png'
 import m3 from '../constants/dsa_visualizer.png'
 import m4 from '../constants/appointment.png'
-import m5 from '../constants/incident.png'
+import m5 from '../constants/Chatsphere.png'
 
 import d1 from '../constants/dt.png'
 import d2 from '../constants/pq_generator.png'
@@ -225,22 +225,24 @@ export const MERNProjects = [
   },
 
   {
-    name: "Incident Reporting System",
-    techStack: ["MongoDB", "Express.js", "React.js", "Node.js"],
-    image: m5,
+    name: "ChatSphere",
+    techStack: ["MongoDB", "Express.js", "React.js", "Node.js", "Socket.io", "JWT"],
+    image: m5, // Replace with your actual image import (e.g., import m6 from '../assets/chatsphere.png')
     description:
-      "A reporting platform that enables employees or community members to log, track, and manage incident reports. Admins can update statuses and assign resolutions.",
+      "ChatSphere is a real-time full-stack chat application that enables users to communicate seamlessly with instant messaging, group chats, and live user status indicators. It features authentication, responsive design, and smooth socket-based interactions.",
     features: [
-      "User and admin dashboards",
-      "Incident categories and filters",
-      "Real-time status updates",
-      "Notification system via email",
+      "Real-time one-to-one and group chats",
+      "User authentication with JWT and bcrypt",
+      "Socket.io-based instant messaging and online status",
+      "Typing indicators and message seen updates",
+      "Responsive and modern UI using React.js",
+      "MongoDB-based persistent chat history",
     ],
-    github: "https://github.com/Sanket-2736/Incident-Reporting-System",
+    github: "https://github.com/Sanket-2736/ChatSphere-MERN-Stack-Chat-Application",
     live: "Underdevelopment",
     status: "Under Development",
-    duration: "Ongoing (Since May 2025)",
-    role: "Backend + UI Developer"
+    duration: "Ongoing",
+    role: "Full Stack Developer"
   },
 
   {
@@ -262,6 +264,52 @@ export const MERNProjects = [
     role: "Full Stack Developer"
   }
 ];
+
+import n1 from '../constants/next1.png'
+import n2 from '../constants/next2.png'
+
+export const NextJSProjects = [
+  {
+    name: "QuickCart - E-commerce Platform",
+    techStack: ["Next.js", "React.js", "Tailwind CSS", "MongoDB", "Stripe", "Vercel"],
+    image: n1,
+    description:
+      "A modern full-stack e-commerce platform built with Next.js that offers a seamless shopping experience. Features include product browsing, cart management, order tracking, and secure online payments.",
+    features: [
+      "Dynamic product pages using Next.js routing",
+      "Server-side rendering (SSR) for SEO optimization",
+      "Stripe payment integration for secure checkout",
+      "User authentication and order history management",
+      "Responsive UI with Tailwind CSS",
+    ],
+    github: "https://github.com/Sanket-2736/QuickCart",
+    live: "https://quick-cart-liard-eta.vercel.app/",
+    status: "Live",
+    duration: "Completed",
+    role: "Full Stack Developer"
+  },
+
+  {
+    name: "Blogger - Modern Blog App",
+    techStack: ["Next.js", "React.js", "MongoDB", "Tailwind CSS", "Vercel"],
+    image: n2,
+    description:
+      "A feature-rich blogging platform where users can read, write, and manage blogs. Built with Next.js for optimal performance and SEO, and a responsive design for all devices.",
+    features: [
+      "Dynamic blog rendering with Next.js dynamic routes",
+      "Markdown support for blog content",
+      "User authentication and dashboard",
+      "Server-side rendering for SEO and fast load times",
+      "Responsive UI using Tailwind CSS",
+    ],
+    github: "https://github.com/Sanket-2736/blog-application",
+    live: "https://blog-application-eight-nu.vercel.app/",
+    status: "Live",
+    duration: "Completed",
+    role: "Full Stack Developer"
+  }
+];
+
 
 export const djangoProjects = [
   {
