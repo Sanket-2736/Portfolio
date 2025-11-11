@@ -4,8 +4,27 @@ import { motion } from 'framer-motion';
 
 function RoadMap() {
   return (
-    <section className="py-16 bg-gradient-to-b from-gray-800 via-gray-900 to-black text-white relative">
-      <h2 className="text-center text-4xl font-bold mb-12">My Journey</h2>
+    <section className="py-16 bg-gradient-to-b from-gray-800 via-gray-900 to-black text-white relative overflow-hidden">
+      {/* Twinkling Stars Background */}
+      <div className="absolute inset-0">
+        {[...Array(50)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute rounded-full bg-white animate-pulse"
+            style={{
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+              width: `${Math.random() * 3 + 1}px`,
+              height: `${Math.random() * 3 + 1}px`,
+              animationDelay: `${Math.random() * 5}s`,
+              animationDuration: `${Math.random() * 3 + 2}s`,
+              opacity: Math.random() * 0.7 + 0.3,
+            }}
+          />
+        ))}
+      </div>
+
+      <h2 className="text-center text-4xl font-bold mb-12 relative z-10">My Journey</h2>
 
       <div className="relative w-full max-w-6xl mx-auto">
         <div
@@ -13,9 +32,8 @@ function RoadMap() {
           style={{ width: '6px' }}
         ></div>
 
-        <div className="space-y-16">
+        <div className="space-y-16 relative z-10">
 
-          {/* Each Section is wrapped in motion.div */}
           {/* School */}
           <div className="flex flex-col md:flex-row items-center justify-between relative">
             <div className="w-full md:w-1/2 text-right pr-8">
@@ -97,6 +115,25 @@ function RoadMap() {
             <div className="absolute hidden sm:block bg-yellow-700 w-8 h-8 rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
           </div>
 
+          {/* App Development Learning */}
+          <div className="flex flex-col md:flex-row items-center justify-between relative">
+            <div className="w-full md:w-1/2 text-right pr-8">
+              <motion.div
+                className="bg-teal-700 ml-10 p-6 rounded-lg shadow-2xl"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+              >
+                <h3 className="text-xl font-semibold mb-2">Learning App Development</h3>
+                <p>Currently exploring <span className="font-bold">React Native</span> and <span className="font-bold">Flutter</span></p>
+                <p>Building cross-platform mobile applications</p>
+                <p>Focus on <span className="font-bold">UI/UX design principles</span> and <span className="font-bold">native performance</span></p>
+              </motion.div>
+            </div>
+            <div className="absolute hidden sm:block bg-teal-700 w-8 h-8 rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+          </div>
+
           {/* Projects */}
           <div className="flex flex-col md:flex-row items-center justify-between relative">
             <div className="w-full md:w-1/2 text-left pl-10">
@@ -144,8 +181,28 @@ function RoadMap() {
             <div className="absolute hidden sm:block bg-pink-600 w-8 h-8 rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
           </div>
 
-          {/* Future Goals */}
+          {/* Open Source Contribution */}
           <div className="flex flex-col md:flex-row items-center justify-between relative">
+            <div className="w-full md:w-1/2 text-right pr-8">
+              <motion.div
+                className="bg-orange-600 ml-10 p-6 rounded-lg shadow-2xl"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+              >
+                <h3 className="text-xl font-semibold mb-2">Open Source Contributor</h3>
+                <p className="font-bold text-lg mb-2">GGSOC '25 Participant</p>
+                <p>Contributing to open source projects</p>
+                <p>Collaborating with global developers</p>
+                <p>Building scalable and maintainable code</p>
+              </motion.div>
+            </div>
+            <div className="absolute hidden sm:block bg-orange-600 w-8 h-8 rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+          </div>
+
+          {/* Future Goals */}
+          <div className="flex flex-col md:flex-row-reverse items-center justify-between relative">
             <div className="w-full md:w-1/2 text-right pr-8">
               <motion.div
                 className="bg-red-700 ml-10 p-6 rounded-lg shadow-2xl"
@@ -155,12 +212,15 @@ function RoadMap() {
                 viewport={{ once: true }}
               >
                 <h3 className="text-xl font-semibold mb-2">Future Goals</h3>
-                <p>Contribute to <span className="font-bold">Open Source Projects</span></p>
+                <p>Continue contributing to <span className="font-bold">Open Source Projects</span></p>
                 <p>Specialize in <span className="font-bold">Cloud Engineering</span></p>
+                <p>Master <span className="font-bold">Mobile App Development</span></p>
+                <p>Explore <span className="font-bold">AI/ML Integration</span> in applications</p>
               </motion.div>
             </div>
             <div className="absolute hidden sm:block bg-red-700 w-8 h-8 rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/4"></div>
           </div>
+
         </div>
       </div>
     </section>

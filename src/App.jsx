@@ -7,19 +7,24 @@ import Skills from './sections/Skills'
 import Resume from './sections/Resume'
 import Contact from './sections/Contact'
 import Projects from './sections/Projects'
+import Preloader from './sections/Preloader'
+
 function App() {
   return (
-    <div className='max-w-7xl mx-auto'>
-      <Navbar/>
-      <Routes>
-        <Route path="/" element={<Hero/>}/>
-        <Route path="/skills" element={<Skills/>}/>
-        <Route path="/projects" element={<Projects/>}/>
-        <Route path="/resume" element={<Resume/>}/>
-        <Route path="/contact" element={<Contact/>}/>
-      </Routes>
-      <Footer/>
-    </div>
+    <>
+      <Preloader />
+      <div className='max-w-7xl mx-auto'>
+        <Navbar/>
+        <Routes>
+          <Route path="/" element={<Hero/>}/>
+          <Route path="/skills" element={<Skills/>}/>
+          <Route path="/projects" element={<Projects/>}/>
+          <Route path="/resume" element={<Resume/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+        </Routes>
+        <Footer/>
+      </div>
+    </>
   )
 }
 
